@@ -1,0 +1,59 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #0a0a0a;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+}
+
+.game-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#world-map {
+    background: url('world-map.png');
+    height: 500px;
+    position: relative;
+    border: 3px solid #333;
+}
+
+.country {
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.country:hover {
+    transform: scale(1.05);
+}
+
+.control-panel {
+    background: #222;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+button {
+    background: #4a148c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background: #7b1fa2;
+}
+
+#event-log {
+    height: 100px;
+    overflow-y: auto;
+    background: #111;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #333;
+}

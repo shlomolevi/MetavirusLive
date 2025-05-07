@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>МетаВирус: Симулятор Пандемии</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🔬 <span id="virus-name">МетаВирус-2023</span> 🔬</h1>
+        
+        <div class="game-panels">
+            <!-- Карта мира -->
+            <div id="world-map"></div>
+            
+            <!-- Панель управления -->
+            <div class="control-panel">
+                <div class="stats">
+                    <p>Заражено: <span id="infected">0</span>/<span id="population">7,900,000,000</span></p>
+                    <p>Смертей: <span id="deaths">0</span></p>
+                    <p>ДНК-очков: <span id="dna">50</span></p>
+                </div>
+                
+                <div class="upgrades">
+                    <h3>Эволюция вируса:</h3>
+                    <button onclick="buyUpgrade('contagion')">+ Заразность (20 DNA)</button>
+                    <button onclick="buyUpgrade('severity')">+ Летальность (30 DNA)</button>
+                    <button onclick="buyUpgrade('resistance')">+ Устойчивость (25 DNA)</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="event-log"></div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
